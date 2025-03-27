@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Boxes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="heading"><h1> YAY! It's BOGO</h1></div>
+    <div class="container">
+        <div class="box" id="box1" data-price="10">
+            <div class="box-content">
+                <h3>1 Unit</h3>
+                <div class="options">
+                    <label for="color1">Color:</label>
+                    <select id="color1" class="color-select">
+                        <option value="">Select Color</option>
+                    </select>
+
+                    <label for="size1">Size:</label>
+                    <select id="size1" class="size-select">
+                        <option value="">Select Size</option>
+                    </select>
+
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" id="box2" data-price="15">
+            <div class="box-content">
+                <h3>2 Unit</h3>
+                <div class="options">
+                    <label for="color2">Color:</label>
+                    <select id="color2" class="color-select">
+                        <option value="">Select Color</option>
+                    </select>
+
+                    <label for="size2">Size:</label>
+                    <select id="size2" class="size-select">
+                        <option value="">Select Size</option>
+                    </select>
+
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" id="box3" data-price="20">
+            <div class="box-content">
+                <h3>3 Unit</h3>
+                <div class="options">
+                    <label for="color3">Color:</label>
+                    <select id="color3" class="color-select">
+                        <option value="">Select Color</option>
+                    </select>
+
+                    <label for="size3">Size:</label>
+                    <select id="size3" class="size-select">
+                        <option value="">Select Size</option>
+                    </select>
+
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart">
+            <h3>Cart</h3>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="total">0.00</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
